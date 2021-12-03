@@ -1,0 +1,97 @@
+.topbar {
+  background-color: #fbfbfb;
+  height: 63px;
+  padding: 8px 24px;
+  align-items: center;
+  display: flex;
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &_section {
+    display: flex;
+    align-items: center;
+  }
+  &_title {
+    color: #4e4c4c;
+    font-family: 'Cairo Light';
+    font-size: 18px;
+    margin: 0 0 0 32px;
+  }
+  &_logo {
+    display: none;
+  }
+  &_btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 102, 0)!important;
+    font-size: 18px;
+    
+    font-weight: 700;
+    width: 165px;
+    border-radius: 8px;
+    height: 45px;
+    color: #fbfbfb!important;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    border-width: 0;
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
+  &_buttons {
+    display: flex;
+    margin-left: 10rem;
+  }
+}
+[dir='ltr'] .topbar {
+  &_btn {
+    margin: 0 20px 0 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &_title {
+    margin: 0 32px 0 0;
+  }
+}
+@media (max-width: 991px) {
+  .topbar {
+    &_btn {
+      display: none;
+    }
+    &_section {
+      justify-content: space-between;
+      width: 100%;
+    }
+    &_logo {
+      display: flex;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .topbar {
+    &_title {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .topbar {
+    &_btn {
+      display: none;
+    }
+    &_section {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
