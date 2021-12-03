@@ -1,0 +1,81 @@
+.socialLinks {
+  display: flex;
+  align-items: center;
+  &_github {
+    background-image: url('../../public/icons/social-icon/icon-no-active/github.svg');
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    border: 1px solid #4e4c4c;
+    border-radius: 50%;
+    &:hover {
+      background-image: url('../../public/icons/social-icon/icon-active/github.svg');
+      border: none;
+    }
+  }
+  &_google {
+    background-image: url('../../public/icons/social-icon/icon-no-active/google-plus.svg');
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    border: 1px solid #4e4c4c;
+    border-radius: 50%;
+    &:hover {
+      background-image: url('../../public/icons/social-icon/icon-active/google-plus.svg');
+      border: none;
+    }
+  }
+ 
+  &_linkedin {
+    background-image: url('../../public/icons/social-icon/icon-no-active/linkedin.svg');
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    border: 1px solid #4e4c4c;
+    border-radius: 50%;
+    &:hover {
+      background-image: url('../../public/icons/social-icon/icon-active/linkedin.svg');
+      border: none;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .socialLinks {
+    &_github {
+      width: 30px;
+      height: 30px;
+    }
+    &_google {
+      width: 30px;
+      height: 30px;
+    }
+    &_twitter {
+      width: 30px;
+      height: 30px;
+    }
+    &_linkedin {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .socialLinks {
+    &_github {
+      width: 40px;
+      height: 40px;
+    }
+    &_google {
+      width: 40px;
+      height: 40px;
+    }
+    &_twitter {
+      width: 40px;
+      height: 40px;
+    }
+    &_linkedin {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

@@ -1,14 +1,14 @@
 .topbar {
-  background-color: #fbfbfb;
+  background-color: #fff;
   height: 63px;
   padding: 8px 24px;
   align-items: center;
   display: flex;
   &_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
   }
   &_section {
     display: flex;
@@ -18,32 +18,25 @@
     color: #4e4c4c;
     font-family: 'Cairo Light';
     font-size: 18px;
-    margin: 0 0 0 32px;
+    font-weight: 700;
   }
   &_logo {
     display: none;
   }
   &_btn {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: rgb(255, 102, 0)!important;
-    font-size: 18px;
-    
-    font-weight: 700;
-    width: 165px;
-    border-radius: 8px;
-    height: 45px;
-    color: #fbfbfb!important;
+    font-size: 18px; 
+    font-weight: 700;  
+    color: #4e4c4c;
     padding: 8px;
-    text-align: center;
     cursor: pointer;
-    margin-left: 20px;
-    border-width: 0;
-    &:last-child {
-      margin-left: 0;
-    }
+    
   }
+  &_btn:hover {
+      color: #FE5018;
+    }
 
   &_buttons {
     display: flex;

@@ -4,6 +4,7 @@ import React from 'react'
 import { useIntl } from 'react-intl'
 import Link from 'next/link'
 import DropdownLanguages from 'components/DropdownLanguages/DropdownLanguages'
+import SocialLinks from 'components/SocialLinks/SocialLinks'
 import styles from './Topbar.module.scss'
 
 const Topbar = () => {
@@ -17,16 +18,18 @@ const Topbar = () => {
     <div className={styles.topbar}>
       <div className={styles.topbar_container}>
         <div className={styles.topbar_section}>
-          {/*       <Link href={'/'}>
-            <img
+
+          <Link href={'/'}>
+            {/*  <img
               alt="me"
               className={styles.topbar_logo}
               src="/images/logo-kito.png"
               width="140"
               height="45"
-            />
-          </Link> */}
-          <p className={styles.topbar_title}>{f('topbarText')}</p>
+            /> */}
+            <a className={styles.topbar_title}>{f('topbarText')}</a>
+          </Link>
+
           <div className={styles.topbar_buttons}>
 
             <Link href="/landing">

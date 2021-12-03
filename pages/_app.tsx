@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { IntlProvider } from 'react-intl'
 import { useRouter } from 'next/router'
 import { QueryClient, QueryClientProvider } from 'react-query'
@@ -24,9 +24,29 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const localeCopy = locales[locale]
   const { common } = localeCopy
   const messages = localeCopy[pathname]
+  const [localeState, setLocale] = useState(locale)
+
+  const getDirection = (loc) => {
+    switch (loc) {
+      case 'ar':
+        return 'rtl'
+      case 'en':
+        return 'ltr'
+      case 'fr':
+        return 'ltr'
+      default:
+        return 'ltr'
+    }
+  }
+
+  useEffect(() => {
+    document.documentElement.dir = getDirection(locale)
+    document.documentElement.lang = locale
+    setLocale(locale)
+  }, [locale])
   return (
     <IntlProvider
-      locale={locale}
+      locale={localeState}
       defaultLocale={defaultLocale}
       messages={{ ...messages, ...common }}
     >

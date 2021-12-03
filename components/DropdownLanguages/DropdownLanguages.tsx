@@ -6,8 +6,8 @@ import styles from './DropdownLanguages.module.scss'
 
 const options = [
   { value: 'ar', title: 'العربية' },
-  { value: 'en', title: 'English' },
-  { value: 'fr', title: 'Français' },
+  { value: 'en', title: 'En' },
+  { value: 'fr', title: 'Fr' },
 ]
 
 const DropdownLanguages = () => {

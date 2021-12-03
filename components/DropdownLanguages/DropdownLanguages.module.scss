@@ -1,6 +1,6 @@
 .DropDown {
   font-family: 'Cairo Regular';
-  margin-right: 24px;
+  
 }
 .DropDownContainer {
   position: relative;
@@ -52,7 +52,7 @@
   &:hover,
   &:focus,
   &:active {
-    color: #e6c300;
+    color: #FE5018;
   }
   &_img {
     position: absolute;
@@ -61,7 +61,7 @@
   }
 }
 .active {
-  color: #e6c300;
+  color: #FE5018;
 }
 [dir='ltr'] .DropDownHeader img {
   margin: 0 12px 0 0;

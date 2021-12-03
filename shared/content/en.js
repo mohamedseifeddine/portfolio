@@ -1,8 +1,6 @@
 export default {
   common: {
     ButtonText: 'button Text',
-  },
-  '/': {
     hello: 'Hello, world!',
     welcomeMessage: 'Welcome to your internationalised page!',
     topbarText: 'MSH',
