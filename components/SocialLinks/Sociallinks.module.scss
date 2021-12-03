@@ -1,6 +1,7 @@
 .socialLinks {
   display: flex;
   align-items: center;
+  justify-content: center;
   &_github {
     background-image: url('../../public/icons/social-icon/icon-no-active/github.svg');
     width: 40px;
