@@ -11,6 +11,11 @@
     justify-content: center;  
     padding: 8px;
     text-align: center;
-
+    &_social {
+        justify-content: center;
+        display: flex;
+        color:#FE5018;
+        font-weight: 700;
+    }
     }
 }
