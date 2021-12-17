@@ -1,0 +1,116 @@
+.timeLine { 
+    padding: 3rem;
+    background-color: #fff;
+    &_notification_section {
+        margin-bottom: 2rem;
+      }
+      
+      &_notification_section:last-child {
+        margin-bottom: 0;
+      }
+      
+      body {
+        background-color: #F3F3F3;
+        color: hsl(200, 100%, 20%)
+      }
+      
+      &_avatar > img {
+        width: 100%;
+        border-radius: 100%;
+        border: 2px solid white;
+        display: block;
+      }
+      
+      &_notification_grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-auto-rows: auto;
+        gap: 1rem;
+        max-width: 750px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      
+      &_avatar {
+        position: relative;
+      }
+      
+      &_avatar::after {
+        content: "";
+        position: absolute;
+        background-color: #FE5018;
+        width: 1px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50px;
+        bottom: 1rem;
+      }
+      
+      &_avatar:first-child::before {
+        content: "";
+        position: absolute;
+        background-color: #FE5018;
+        width: 1px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: calc(-1 * --1rem);
+        bottom: 100%;
+      }
+      
+      &_avatar:nth-last-child(2)::after {
+        display: none;
+      }
+      
+      &_notification-card {
+        background-color: white;
+        border: 1px solid #FE5018;
+        border-radius: .25rem;
+        padding: .75rem;
+      }
+      
+      &_notification_header {
+        display: flex;
+        gap: .5rem;
+      }
+      
+      &_icon {
+        width: 20px;
+        height: 20px;
+      }
+      
+      &_notification_title {
+        flex-grow: 1;
+        font-size: 1.1rem;
+        color: #4e4c4c;
+      }
+      
+      &_notification_time {
+        color: #FE5018;
+      }
+      
+      &_notification_content {
+        
+        color: #4e4c4c;
+        margin-top: .5rem;
+        padding: .25rem;
+        border-radius: .25rem;
+      }
+      
+      &_icon > path {
+        fill: #FE5018;
+      }
+      
+      &_group_header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #FE5018;
+        padding-bottom:.25rem;
+        margin-bottom:1rem;
+      }
+      
+      &_group_date {
+        color: #FE5018;
+      }
+}
