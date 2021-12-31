@@ -25,16 +25,20 @@ const TimeLine = () => (
                                 <div className={styles.timeLine_expereince_time}>{experience.duration}</div>
                             </div>
                             <div className={styles.timeLine_expereince_content}>
-                                <ul>
-                                    <span>Role</span>
+                                <ul className={styles.timeLine_expereince_content_tasks}>
+
                                     {experience.tasks.map(task =>
-                                        <li>{task}</li>
+                                        <li className={styles.timeLine_expereince_content_task}>{task}</li>
                                     )}
+
                                 </ul>
-                                <ul>
-                                    <span>Environment</span>
-                                    <p>{experience.environments}</p>
-                                </ul>
+
+                                <div className={styles.timeLine_expereince_content_tools}>
+                                    {experience.tools.map(tool =>
+                                        <span className={styles.timeLine_expereince_content_tool}>{tool}</span>
+                                    )}
+                                </div>
+
 
                             </div>
                         </div>

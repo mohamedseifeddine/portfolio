@@ -1,10 +1,10 @@
 .timeLine {
-    padding: 3rem;
+    padding: 1rem;
     background-color: #fff;
     color: #4e4c4c;
+    margin: 2rem;
     &_expereince_section {
-        margin-bottom: 2rem;
-
+         margin:1rem;
       }
       &_expereince_section:last-child {
         margin-bottom: 0;
@@ -12,6 +12,7 @@
       }
       &_expereinces {
         display: flex;
+        flex-wrap: wrap;
       }
 
      &_avatar > img {
@@ -25,10 +26,11 @@
         border: solid;
         display: grid;
         background-color: #f5f5f5;
-        grid-template-columns: 45px 1fr;
+        grid-template-columns: 40px 1fr;
         grid-auto-rows: auto;
+        grid-gap: 1rem;
         gap: 1rem;
-        max-width: 450px;
+        max-width: 400px;
         margin: 0 auto;
         margin-bottom: 2rem;
         padding: 0.8rem;
@@ -43,12 +45,6 @@
         content: "";
         position: absolute;
         background-color: #FE5018;
-        width: 1px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        top: 50px;
-        bottom: 1rem;
       }
 
       &_avatar:first-child::before {
@@ -56,11 +52,6 @@
         position: absolute;
         background-color: #FE5018;
         width: 1px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        top: calc(-1 * --1rem);
-        bottom: 100%;
       }
 
       &_avatar:nth-last-child(2)::after {
@@ -85,21 +76,47 @@
       }
 
       &_expereince_title {
-        flex-grow: 1;
         font-size: 1.1rem;
-        color: #4e4c4c;
-      }
+        font-weight: bolder;
+        }
 
       &_expereince_time {
         color: #FE5018;
+        margin-left: 0.9rem;
+        font-weight: bolder;
       }
 
       &_expereince_content {
-
         color: #4e4c4c;
         margin-top: .5rem;
         padding: .25rem;
         border-radius: .25rem;
+        ;
+        &_tasks{
+          overflow-y: auto;
+          height: 250px
+        }
+        &_task{
+          font-weight: normal;
+          line-height: 1.7rem;
+
+        }
+        &_tools{
+          flex-wrap: wrap;
+          display: flex;
+          font-size: .9rem;
+          font-weight: 700;
+        }
+        &_tool{
+          margin-bottom: 0.2rem;
+          color: #4e4c4c;
+          margin-left: .7rem;
+          text-align: left;
+          border: solid 1px #FE5018;
+          padding: .4em;
+          width: auto;
+          border-radius: 1em 1em 1em 1em;
+        }
       }
 
       &_icon > path {
