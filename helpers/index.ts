@@ -9,7 +9,7 @@ export const Experiences = [
     role: 'Senior fullstack JS Developer',
     tasks: [
       'Contribution to the structuring of the project',
-      'Integration of different payment methods (Paypal, Checkout...) ',
+      'Integration of different payment methods (Paypal, Checkout...)',
       'Creation of generic components with NextJS',
       'Implementation of unit tests with React testing library.',
     ],
@@ -108,4 +108,27 @@ export const Experiences = [
       'Git,',
     ],
   },
+]
+export const skills = [
+
+  {
+    theme: 'Web development',
+    skills:
+      [
+        'HTML5', 'CSS3', 'flexbox', 'Bootstrap', 'Javascript', 'TypeScript',
+        'ReactJs', 'Redux', 'React query', 'NextJS', 'NodeJs', 'ExpressJs'
+      ]
+  },
+  {
+    theme: 'Database',
+    skills: ['MongoDB', 'MySQL', 'PostgreSQL']
+  },
+  {
+    theme: 'Test',
+    skills: ['Postman', 'Swagger', 'Jest', 'React Testing Library', 'Cypress']
+  },
+  {
+    theme: 'Versioning & Virtualization',
+    skills: ['Git', 'CI/CD', 'Docker', 'AWS']
+  }
 ]

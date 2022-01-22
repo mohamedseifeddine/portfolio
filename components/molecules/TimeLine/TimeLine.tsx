@@ -9,15 +9,14 @@ const TimeLine = () => (
         <section className={styles.timeLine_expereince_section}>
             <div className={styles.timeLine_group_header}>
                 <div className={styles.timeLine_group_title}>
-                    <h2>Experiences</h2>
+                    <h2>Where I've Worked</h2>
                 </div>
             </div>
             <div className={styles.timeLine_expereinces}>
                 {Experiences.map((experience) =>
                     <div className={styles.timeLine_expereince_grid}>
-                        <a className={styles.timeLine_avatar} href={experience.website} target="_blank" rel="noreferrer" >
-                            <img src={experience.logo} alt="hi" />
-                        </a>
+                        <img width={50} src={experience.logo} alt="hi" />
+
                         <div className={styles.timeLine_expereince_card}>
                             <div className={styles.timeLine_expereince_header}>
 
@@ -33,14 +32,16 @@ const TimeLine = () => (
 
                                 </ul>
 
-                                <div className={styles.timeLine_expereince_content_tools}>
-                                    {experience.tools.map(tool =>
-                                        <span className={styles.timeLine_expereince_content_tool}>{tool}</span>
-                                    )}
-                                </div>
+
 
 
                             </div>
+
+                        </div>
+                        <div className={styles.timeLine_expereince_content_tools}>
+                            {experience.tools.map(tool =>
+                                <span className={styles.timeLine_expereince_content_tool}>{tool}</span>
+                            )}
                         </div>
                     </div>
                 )}
