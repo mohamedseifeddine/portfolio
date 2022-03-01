@@ -1,0 +1,43 @@
+.projects{
+    
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color:#4e4c4c;
+
+    &_project {
+        background-color: #fff;
+        padding: 1rem;
+        margin: 8px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        border: solid 1px #bbbaba;
+        h3 {
+            font-size: 24px;
+            text-transform: capitalize;
+            
+        }
+        p {
+            font-size: 18px;
+        }
+        &_link {
+            align-items: flex-end;
+        }
+        &_github {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            margin-left: 16px;
+            border-radius: 50%;
+            p{
+                margin: .5rem;
+            }
+        }
+    }
+
+    image{
+
+    }
+}

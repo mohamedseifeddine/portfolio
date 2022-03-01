@@ -12,7 +12,9 @@ const About = () => (
         </div>
 
         <div className={styles.about_description}>
-            <h2>Hey ! i' m mohamed seifeddine Hamza</h2>
+            <h2>
+                Hey ! i &rsquo; m mohamed seifeddine Hamza
+            </h2>
             <p>
                 I’m a JavaScript developer, currently working as a full time Frontend Developer,
                 my focus is always on building the best secure, reliable, and good User Experience websites.<br />I love learning new things and sharing my discoveries
@@ -20,17 +22,15 @@ const About = () => (
             </p>
             <div className={styles.about_description_skills}>
                 {skills.map(skill =>
-                    <div className={styles.about_description_categories} >
+                    <div key ={skill.id} className={styles.about_description_categories} >
                         <h4>{skill.theme}</h4>
 
                         <div className={styles.about_description_category}>
                             {skill.skills.map(x =>
 
-                                <span className={styles.about_description_skill}>
+                                <span key = {skill.id}  className={styles.about_description_skill}>
                                     {x}
                                 </span>
-
-
                             )
                             }
                         </div>
@@ -38,9 +38,6 @@ const About = () => (
                 )}
 
             </div>
-
-
-
         </div>
     </div >
 )

@@ -112,6 +112,7 @@ export const Experiences = [
 export const skills = [
 
   {
+    id:1,
     theme: 'Web development',
     skills:
       [
@@ -120,14 +121,17 @@ export const skills = [
       ]
   },
   {
+    id:2,
     theme: 'Database',
     skills: ['MongoDB', 'MySQL', 'PostgreSQL']
   },
   {
+    id:3,
     theme: 'Test',
     skills: ['Postman', 'Swagger', 'Jest', 'React Testing Library', 'Cypress']
   },
   {
+    id:4,
     theme: 'Versioning & Virtualization',
     skills: ['Git', 'CI/CD', 'Docker', 'AWS']
   }
