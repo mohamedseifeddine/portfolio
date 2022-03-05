@@ -7,11 +7,9 @@ import styles from './TimeLine.module.scss'
 const TimeLine = () => (
     <div className={styles.timeLine} >
         <section className={styles.timeLine_expereince_section}>
-            <div className={styles.timeLine_group_header}>
-                <div className={styles.timeLine_group_title}>
-                    <h2>Where I've Worked</h2>
-                </div>
-            </div>
+            
+                    <h2>Where I&#39;ve Worked</h2>
+            
             <div className={styles.timeLine_expereinces}>
                 {Experiences.map((experience) =>
                     <div className={styles.timeLine_expereince_grid}>

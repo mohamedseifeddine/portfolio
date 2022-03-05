@@ -4,7 +4,7 @@ import TimeLine from 'components/molecules/TimeLine'
 import styles from './Experience.module.scss'
 
 const Experience = () => (
-    <div className={styles.expeirence}>
+    <div className={styles.experience}>
         <TimeLine />
     </div>
 )

@@ -3,6 +3,13 @@
     background-color: #fff;
     color: #4e4c4c;
     margin: 2rem;
+    h2{
+      border-bottom: 3px solid #FE5018;
+      padding-bottom:.25rem;
+        margin-bottom:1rem;
+        line-height: 4rem;
+        width: 230px;
+    }
     &_expereince_section {
          margin:1rem;
       }
@@ -123,15 +130,6 @@
       &_icon > path {
         fill: #FE5018;
       }
-
-      &_group_header {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #FE5018;
-        padding-bottom:.25rem;
-        margin-bottom:1rem;
-      }
-
       &_group_date {
         color: #FE5018;
       }
