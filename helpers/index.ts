@@ -110,29 +110,6 @@ export const Experiences = [
   },
 ]
 export const skills = [
+  'TypeScript','React','MongoDB','Jest','Vue','NodeJS','PostgreSQL','Cypress'
 
-  {
-    id:1,
-    theme: 'Web development',
-    skills:
-      [
-        'HTML5', 'CSS3', 'flexbox', 'Bootstrap', 'Javascript', 'TypeScript',
-        'ReactJs', 'Redux', 'React query', 'NextJS', 'NodeJs', 'ExpressJs'
-      ]
-  },
-  {
-    id:2,
-    theme: 'Database',
-    skills: ['MongoDB', 'MySQL', 'PostgreSQL']
-  },
-  {
-    id:3,
-    theme: 'Test',
-    skills: ['Postman', 'Swagger', 'Jest', 'React Testing Library', 'Cypress']
-  },
-  {
-    id:4,
-    theme: 'Versioning & Virtualization',
-    skills: ['Git', 'CI/CD', 'Docker', 'AWS']
-  }
 ]

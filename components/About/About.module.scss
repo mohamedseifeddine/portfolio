@@ -1,74 +1,54 @@
 .about {
-    background-color: #fff;
-    color: #4e4c4c;
-    margin-top: 2rem;
-    padding: 2rem;
-    justify-content: center;
-    display: flex;   
-    justify-content: space-evenly;
-    &_social {        
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color:#FE5018;
-      font-weight: 700;
-      flex: 1;
-      
-  }
-    &_description {
+  display: flex;
+  margin-top: 2rem;
+  padding: 4rem;
+  background-color: #fff;
+  color: #4e4c4c;
+  img {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;  
-    padding: 8px;
-    text-align: center;
+    justify-content: center;
+    flex: 1;
+    
+  }
+  h2 {
+    border-bottom: 1px solid #FE5018;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    width: auto;
+  }
+  &_description {
+    margin-left: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
     flex: 3;
     &_skills {
-        flex-wrap: wrap;
-        display: flex;
-       
-        width: 100%;
-        justify-content: space-between;
-        font-size: .9rem;
-        font-weight: 700;
-         }
-    &_categories{
-        flex:1 ;
-        margin-bottom: 0.2rem;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding: .4em;
-        
-      h4 {
-        //border-bottom:solid #fe5018 1px;
-        margin-left: .4rem;
-      }
-      }
-      &_category{
-        margin-bottom: 0.2rem;
-        display: flex;
-        text-align: left;
-        flex-wrap: wrap;
-        justify-content: start;
-        
-     }
-     &_skills{
-
-        display: flex;
-        margin-bottom: 0.2rem;
-        color: #4e4c4c;
-        padding: .4em;
-        border-radius: 1em 1em 1em 1em;
-      }
-
-      &_skill{
-        display: flex;
-        margin-bottom: 0.2rem;
-        margin-left: 0.4rem;
-        color: #4e4c4c;
-        border: solid 1px #FE5018;
-        padding: .4em;
-        border-radius: 1em 1em 1em 1em;
-      }
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 0.9rem;
     }
+    &_skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 280px);
+      padding: 0px;
+      margin: 0px 0px 0px;
+      overflow: hidden;
+    }
+    &_skills li {
+      position: relative;
+      font-size: 18px;
+    }
+    &_skills li::before {
+      content: "▰";
+      color: #fe5018;
+      margin-right: 0.5em;
+      font-size: 14px;
+      line-height: 3em;
+    }
+  }
 }
