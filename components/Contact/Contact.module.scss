@@ -1,0 +1,29 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: #fff;
+    text-align: center;
+    color: #4e4c4c;
+    h2 {
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+      line-height: 4rem;
+      width: auto;
+    }
+    a {
+        align-self: center;
+    }
+    button {
+        border: 1px solid rgb(67, 67, 67);
+        cursor: pointer;
+        color: rgb(67, 67, 67);
+        background-color: transparent;
+        padding: 13px;
+        border-radius: 4px;
+        outline: none;
+    }
+    &_phone {
+        font-size: .9rem;
+    }
+}
